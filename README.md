@@ -3,10 +3,6 @@ This project is a demonstration in a bug discovered in NSAttributedString, UILab
 
 We were trying to create an `NSAttributedString` which starts with an `NSTextAttachement` containing an image. We were then applying an `NSForegroundColor` attribute to the string and would see everything _except_ the first image be colored correctly.
 
-Demo of the issue:
-
-![image](http://i.imgur.com/8vivMDC.png)
-
 Code that replicates the issue:
 
 ```objective-c
@@ -36,3 +32,7 @@ Code that replicates the issue:
     
     [self.view addSubview:label];
 ```
+
+Demo of the issue:
+
+![image](http://i.imgur.com/8vivMDC.png)
